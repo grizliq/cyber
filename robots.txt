@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /fonts/
+Disallow: /*?
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&gclid&from&openstat
+
+User-agent: Yandex
+Allow: /
+Disallow: /fonts/
+Disallow: /*?
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&gclid&from&openstat
+
+Host: luckybearcybersport.ru
+Sitemap: https://luckybearcybersport.ru/sitemap.xml
