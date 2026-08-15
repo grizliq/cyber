@@ -595,6 +595,52 @@ ol, ul {
     font-size: 22px;
 }
 
+/* ---------- Частые вопросы ---------- */
+.section-faq {
+    background:
+        linear-gradient(rgba(4, 8, 18, 0.84), rgba(4, 8, 18, 0.90)),
+        url('assets/Background.png') center / cover no-repeat,
+        var(--bg);
+    padding: 100px 0 110px;
+}
+
+.faq-lead {
+    margin-top: 26px;
+    max-width: 1180px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--muted);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 52px;
+}
+
+.faq-item {
+    padding: 26px 30px 28px;
+    border: 1px solid var(--line);
+    background: var(--card);
+}
+
+.faq-q {
+    font-family: var(--text);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.faq-a {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.42;
+    color: var(--muted);
+}
+
 /* =====================================================
    ПОДВАЛ
    ===================================================== */
@@ -632,6 +678,15 @@ ol, ul {
     height: 1px;
     margin: 34px auto;
     background: #fff;
+}
+
+.footer-links {
+    max-width: 900px;
+    margin: 0 auto 18px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--muted);
 }
 
 .footer-copy {
@@ -675,6 +730,12 @@ ol, ul {
     .card-text  { font-size: 19px; }
     .card-bonus { min-height: 226px; }
     .card-btn .btn { width: 330px; height: 56px; font-size: 20px; }
+
+    .section-faq { padding: 80px 0 90px; }
+    .faq-lead { font-size: 20px; }
+    .faq-grid { margin-top: 42px; gap: 20px; }
+    .faq-q { font-size: 22px; }
+    .faq-a { font-size: 18px; }
 }
 
 @media (max-width: 1440px) {
@@ -714,6 +775,13 @@ ol, ul {
     .card-text  { font-size: 17px; }
     .card-bonus { min-height: 200px; }
     .card-btn .btn { width: 270px; height: 50px; font-size: 18px; }
+
+    .section-faq { padding: 64px 0 72px; }
+    .faq-lead { font-size: 18px; }
+    .faq-grid { margin-top: 34px; }
+    .faq-item { padding: 20px 24px 22px; }
+    .faq-q { font-size: 20px; }
+    .faq-a { font-size: 16px; }
 }
 
 @media (max-width: 1100px) {
@@ -788,6 +856,8 @@ ol, ul {
 
     .card-bonus { min-height: 0; padding-bottom: 90px; }
     .card-btn { right: 16px; bottom: 16px; }
+
+    .faq-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
@@ -812,5 +882,6 @@ ol, ul {
     .card-bonus { padding-bottom: 22px; }
 
     .footer-note { font-size: 15px; }
+    .footer-links { font-size: 13px; }
     .footer-copy { font-size: 14px; }
 }
